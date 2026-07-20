@@ -2,10 +2,10 @@
 
 **🔴 Live Demo:** [https://kidney-disease-classification-cp9h.onrender.com/](https://kidney-disease-classification-cp9h.onrender.com/)
 
-An End-to-End Deep Learning project utilizing a VGG16 CNN architecture to classify Kidney CT Scans into four categories: **Cyst, Normal, Stone, and Tumor**.
+An End-to-End Deep Learning project utilizing a MobileNetV2 CNN architecture to classify Kidney CT Scans into four categories: **Cyst, Normal, Stone, and Tumor**.
 
 ## 🚀 Features
-- **VGG16 Architecture:** Utilizes transfer learning with a custom densely connected classifier head.
+- **MobileNetV2 Architecture:** Utilizes transfer learning with a custom densely connected classifier head.
 - **DVC Pipeline:** Fully reproducible MLOps pipeline covering Data Ingestion, Base Model Preparation, Training, and Evaluation.
 - **MLflow Tracking:** Logs experiment parameters, metrics (accuracy, loss), and model artifacts to DagsHub.
 - **Web Interface:** Built with Flask, featuring a modern, premium, drag-and-drop glassmorphism UI.

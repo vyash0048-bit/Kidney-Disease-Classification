@@ -1,5 +1,5 @@
 AUGMENTATION: True
-IMAGE_SIZE: [224, 224, 3] # as pr VGG16 model
+IMAGE_SIZE: [224, 224, 3] # as pr MobileNetV2 model
 BATCH_SIZE: 32
 INCLUDE_TOP: False
 EPOCHS: 30
