@@ -1,0 +1,16 @@
+.venv
+venv
+.git/
+.dvc/
+.github/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Ignore all artifacts (datasets, base models) to save space
+artifacts/*
+
+# But KEEP the trained model so the app can load it for predictions!
+!artifacts/training/
+artifacts/training/*
+!artifacts/training/trained_model.keras
