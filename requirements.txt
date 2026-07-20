@@ -1,4 +1,4 @@
-tensorflow-cpu==2.12.0
+tensorflow-cpu>=2.16.0
 numpy
 python-box==6.0.2
 pyYAML
