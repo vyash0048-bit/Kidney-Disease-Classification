@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.dvc/
+.github/
+scores.json
+.ipynb_checkpoints/
