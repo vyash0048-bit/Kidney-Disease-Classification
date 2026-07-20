@@ -160,3 +160,6 @@ cython_debug/
 #.idea/
 
 artifacts/*
+!artifacts/training/
+artifacts/training/*
+!artifacts/training/trained_model.keras
