@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import zipfile
 import gdown
 from cnnClassifier.utils.common import get_size
@@ -19,6 +20,11 @@ class DataIngestion:
             dataset_url = self.config.source_URL
             zip_download_dir = self.config.local_data_file
             os.makedirs("artifacts/data_ingestion", exist_ok=True)
+
+            if os.path.exists(zip_download_dir):
+                logger.info(f"File already exists at {zip_download_dir} of size: {get_size(Path(zip_download_dir))}. Skipping download.")
+                return
+
             logger.info(f"Downloading file from {dataset_url} to {zip_download_dir}")
 
             file_id = dataset_url.split("/")[-2]
