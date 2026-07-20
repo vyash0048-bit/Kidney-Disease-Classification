@@ -72,7 +72,7 @@ class Evaluation:
             # Model registry does not work with file store
             if tracking_url_type_store != "file":
                 mlflow.tensorflow.log_model(
-                    self.model, "model", registered_model_name="VGG16Model"
+                    self.model, "model"
                 )
             else:
                 mlflow.tensorflow.log_model(self.model, "model")
